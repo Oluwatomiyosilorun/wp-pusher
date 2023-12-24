@@ -1,0 +1,418 @@
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("fonts/Lato-Light.ttf");
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f8fa;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+hr {
+  height: 2px;
+  background-color: #e0e6ea;
+  border: none;
+  width: calc(100% - 80px);
+  margin: auto;
+}
+
+label {
+  color: #1d2c3c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+}
+
+input {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  background: #edeff2;
+  border: 1px #f0f0f0 solid;
+  flex-shrink: 0;
+  padding: 1px 16px;
+  outline: none;
+  margin-top: 7px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 30px 40px;
+}
+
+.logo img {
+  width: 200px;
+  height: 39px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a,
+.menu button {
+  text-decoration: none;
+  color: #1d2c3c;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.amount-btn {
+  width: 91px;
+  height: 40px;
+  border-radius: 6px;
+  border: 2px solid #646e7a;
+  cursor: pointer;
+}
+
+.checkout_container {
+  width: calc(100% - 542px);
+  height: 795px;
+  margin: 85px auto 0;
+  display: flex;
+}
+
+.checkout {
+  padding-top: 41px;
+  width: 580px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+}
+
+.checkout h2 {
+  padding-left: 48px;
+  color: #1d2c3c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 54px;
+  margin-bottom: 24px;
+}
+
+.checkout hr {
+  background: #f5f7fa;
+  width: 100%;
+}
+
+.info {
+  padding: 36px 49px 41px;
+}
+
+.num_title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.title {
+  color: #1d2c3c;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #548bc5;
+  padding: 4px 7px;
+  color: #548bc5;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.142px;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 9px;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.input_container div {
+  width: 50%;
+}
+
+.email {
+  width: 370px;
+}
+
+#inputs {
+  display: flex;
+  width: 483px;
+  background: #edeff2;
+  margin-top: 7px;
+  border-radius: 4px;
+}
+
+#inputs input {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+#credit_card {
+  width: 70%;
+}
+
+#date {
+  width: 18%;
+}
+
+.info_btn {
+  padding: 36px 49px 0;
+}
+
+.btn {
+  border-radius: 5px;
+  background: #038e7d;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.396px;
+  width: 100%;
+  padding: 13px 17px;
+  border: 0;
+}
+
+.help {
+  width: 303px;
+  display: flex;
+  gap: 10px;
+  margin: 24px auto 0;
+}
+
+.help img {
+  margin-top: -10px;
+}
+
+.help a {
+  color: #646e7a;
+}
+
+.help span {
+  color: #1d2c3c;
+}
+
+.help p {
+  color: #646e7a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.stripe {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.freelancer {
+  width: 312px;
+  border-radius: 0px 6px 6px 0px;
+  background: #1179bf;
+  padding: 42px 46px;
+}
+
+.freelancer_amount .subtitle {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.freelancer_amount .amount {
+  color: #fff;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.015px;
+}
+
+.year {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+sup {
+  vertical-align: top;
+  font-size: large;
+  position: relative;
+  top: 15px;
+}
+
+.ninety {
+  font-size: 60px;
+  font-family: "Lato-Light";
+}
+
+.auto {
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.008px;
+}
+
+.lists {
+  list-style: none;
+  margin-top: 36px;
+}
+
+.lists li {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.008px;
+  margin-bottom: 16px;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #b9f5ff;
+  color: #b9f5ff;
+  text-align: center;
+  line-height: 27px;
+  margin-right: 5px;
+}
+
+.need {
+  color: #fff;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.008px;
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+
+.need p {
+  margin-bottom: 15px;
+}
+
+.need a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 4px solid #b9f5ff;
+}
+
+.need a span {
+  font-style: italic;
+}
+
+.freelancer hr {
+  width: 100%;
+  color: white;
+}
+
+.ftp {
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Lato-Light";
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.009px;
+  margin-top: 43px;
+}
+
+.ftp span {
+  font-weight: 700;
+}
+
+.img_name {
+  margin-top: 17px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.img_name img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.img_name .name {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.008px;
+}
+
+.info_footer {
+  padding-top: 33px;
+  text-align: center;
+}
+
+.info_footer p {
+  color: #31708f;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.info_footer p span {
+  color: #636b6f;
+}
